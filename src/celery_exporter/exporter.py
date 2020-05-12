@@ -1,9 +1,9 @@
 import logging
 import time
 
-import prometheus_client # type: ignore
+import prometheus_client  # type: ignore
 
-from celery.signals import ( # type: ignore
+from celery.signals import (  # type: ignore
     after_task_publish,
     beat_init,
     before_task_publish,
@@ -23,7 +23,7 @@ from .thread_collector import CeleryThreadPoolCollector
 
 
 try:
-    from celery.concurrency.thread import TaskPool as ThreadTaskPool # type: ignore
+    from celery.concurrency.thread import TaskPool as ThreadTaskPool  # type: ignore
 except ImportError:
     ThreadTaskPool = None
 

@@ -1,4 +1,4 @@
-from prometheus_client.core import GaugeMetricFamily # type: ignore
+from prometheus_client.core import GaugeMetricFamily  # type: ignore
 
 
 class CeleryThreadPoolCollector:

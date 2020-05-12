@@ -1,4 +1,4 @@
-import prometheus_client # type: ignore
+import prometheus_client  # type: ignore
 
 
 TASK_PRERUN = prometheus_client.Counter(
